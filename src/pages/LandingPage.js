@@ -1,19 +1,18 @@
 
 import React from 'react';
 import { Grid, Typography, Container, Button, Box } from '@mui/material';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 
 function LandingPage() {
   return (
     <>
-    <Header/>
+   
     <Container maxWidth="lg" sx={{ mt: 5 }}>
       {/* Hero Section */}
       <Grid container spacing={4} alignItems="center" justifyContent="center">
         <Grid item xs={12} md={6}>
           <Typography variant="h2" component="h1" gutterBottom>
-            Welcome to Our Sales Site
+            Welcome to ST <b>Sales Operations</b>
           </Typography>
           <Typography variant="h6" color="textSecondary" paragraph>
             Discover the latest updates on our business, browse the news, and place your orders seamlessly on any device.
@@ -26,7 +25,7 @@ function LandingPage() {
           {/* Placeholder for an image or graphic */}
           <Box
             component="img"
-            src="https://via.placeholder.com/400"
+            src="https://img1.wsimg.com/isteam/ip/ed743e5a-1ed4-486f-b318-0d9cefbbab3e/IMG_2972%20Large.jpeg/:/rs=w:1160,h:763"
             alt="Sales Site Hero"
             sx={{
               width: '100%',
@@ -71,7 +70,7 @@ function LandingPage() {
         sx={{
           mt: 8,
           py: 5,
-          backgroundColor: 'primary.light',
+          backgroundColor: 'primary.main',
           color: 'primary.contrastText',
           borderRadius: 2,
           textAlign: 'center',
