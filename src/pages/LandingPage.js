@@ -82,7 +82,7 @@ function LandingPage() {
         <Typography variant="body1" paragraph>
           Click below to start browsing and place your first order with us!
         </Typography>
-        <Button variant="contained" color="secondary" size="large" href="/orders">
+        <Button variant="contained" color="secondary" size="large" href="sales-website/order-form">
           Start Now
         </Button>
       </Box>
