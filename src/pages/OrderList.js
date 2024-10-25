@@ -1,13 +1,27 @@
-// src/pages/LandingPage.js
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-function LandingPage() {
+function OrderList() {
+  const [orders, setOrders] = useState([]);
+
+  useEffect(() => {
+    axios.get('https://fakeapi.com/orders')
+      .then((response) => setOrders(response.data))
+      .catch((error) => console.error('Error fetching orders:', error));
+  }, []);
+
   return (
     <div>
-      <h1>Welcome to Our Sales Site</h1>
-      <p>This is the landing page for our new website. Explore our news and orders.</p>
+      <h1>Order List</h1>
+      <ul>
+        {orders.map((order) => (
+          <li key={order.id}>
+            Order ID: {order.id} - Total: ${order.total}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
 
-export default LandingPage;
+export default OrderList;
