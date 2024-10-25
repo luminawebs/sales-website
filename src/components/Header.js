@@ -16,13 +16,13 @@ function Header() {
           Sales Site
         </Typography>
         <Box sx={{ display: 'flex' }}>
-          <Button color="inherit" component={Link} to="/">
+          <Button color="inherit" component={Link} to="/sales-website">
             Home
           </Button>
-          <Button color="inherit" component={Link} to="/news">
+          <Button color="inherit" component={Link} to="sales-website/news">
             News
           </Button>
-          <Button color="inherit" component={Link} to="/order-form">
+          <Button color="inherit" component={Link} to="sales-website/order-form">
             Orders
           </Button>
         </Box>

@@ -35,10 +35,10 @@ function App() {
         <Header />
         
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/news" element={<NewsPage />} />
-          <Route path="/orders" element={<OrderList />} />
-          <Route path="/order-form" element={<OrderForm />} />
+          <Route path="sales-website/" element={<LandingPage />} />
+          <Route path="sales-website/news" element={<NewsPage />} />
+          <Route path="sales-website/orders" element={<OrderList />} />
+          <Route path="sales-website/order-form" element={<OrderForm />} />
         </Routes>
         
         <Footer />
